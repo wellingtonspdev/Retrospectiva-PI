@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #f1f3f4;
+    color: #202124;
+    line-height: 1.6;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.form-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 40px 30px;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.form-header h1 {
+    font-size: 2.2em;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.form-header p {
+    font-size: 1.1em;
+    opacity: 0.9;
+}
+.form-body {
+    background: white;
+    padding: 0;
+    border-radius: 0 0 8px 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.intro-section {
+    padding: 30px 30px 10px 30px;
+    font-size: 1em;
+    color: #3c4043;
+    border-bottom: 1px solid #e8eaed;
+}
+.intro-section p {
+    margin-bottom: 1em;
+}
+.section {
+    border-bottom: 1px solid #e8eaed;
+    padding: 30px;
+}
+.section:last-child {
+    border-bottom: none;
+}
+.section-title {
+    background: linear-gradient(90deg, #4285f4, #34a853);
+    color: white;
+    padding: 15px 20px;
+    margin: -30px -30px 20px -30px;
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.section-description {
+    font-style: italic;
+    color: #5f6368;
+    margin-bottom: 30px;
+    margin-top: -10px;
+}
+.question {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-left: 4px solid #4285f4;
+    background: #fafbfc;
+    border-radius: 0 8px 8px 0;
+}
+.question-number {
+    font-weight: 600;
+    color: #4285f4;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+.question-text {
+    font-size: 1em;
+    margin-bottom: 15px;
+    color: #3c4043;
+}
+textarea {
+    width: 100%;
+    min-height: 150px;
+    padding: 15px;
+    border: 2px solid #dadce0;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1em;
+    resize: vertical;
+    transition: border-color 0.3s ease;
+}
+textarea:focus {
+    outline: none;
+    border-color: #4285f4;
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
+}
+.submit-section {
+    padding: 30px;
+    text-align: center;
+    background: #f8f9fa;
+}
+.submit-btn {
+    background: linear-gradient(135deg, #4285f4, #34a853);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.encerramento-section {
+    padding: 20px 30px;
+    text-align: center;
+    font-style: italic;
+    color: #5f6368;
+}

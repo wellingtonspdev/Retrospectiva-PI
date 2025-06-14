@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questionário de Retrospectiva do Projeto IBDN</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="retrospectivaForm">
+            <div class="form-header">
+                <h1>Questionário de Retrospectiva do Projeto IBDN</h1>
+                <p>Coleta de Informações para a Documentação Final do Projeto</p>
+            </div>
+
+            <div class="form-body">
+                <div class="intro-section">
+                    <p>Pessoal, como não teremos tempo para uma reunião de retrospectiva, por favor, respondam este questionário rápido. O objetivo é coletar nossas percepções para a seção "Desafios, Dificuldades e Limitações" da documentação final.</p>
+                    <p>Suas respostas são muito importantes para criar um relatório rico e honesto sobre nosso trabalho. Por favor, seja sincero e detalhado.</p>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Parte 1: Desafios e Dificuldades Durante o Desenvolvimento</div>
+                    <p class="section-description">Esta parte nos ajudará a escrever sobre os obstáculos que superamos.</p>
+                    
+                    <div class="question">
+                        <div class="question-number">1. Desafio Técnico Pessoal</div>
+                        <div class="question-text">Qual foi a maior dificuldade técnica que você enfrentou pessoalmente no projeto? (Pode ser uma tecnologia nova como FastAPI, um bug específico, a configuração do ambiente, a lógica de banco de dados, etc.)</div>
+                        <textarea name="q1" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">2. Complexidade do Código</div>
+                        <div class="question-text">Pensando no código que escrevemos, qual parte você achou mais complexa ou "chata" de implementar e entender? Por quê? (Ex: a lógica de permissão no controller, a autenticação com JWT, as importações entre módulos?)</div>
+                        <textarea name="q2" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">3. Processo de Trabalho</div>
+                        <div class="question-text">Houve algum momento em que você sentiu que o progresso do time estava lento ou "travado"? Se sim, o que você acha que foi a principal causa?</div>
+                        <textarea name="q3" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">4. Maior Aprendizado</div>
+                        <div class="question-text">Qual foi o seu maior aprendizado com as dificuldades que enfrentamos? (O que você faria diferente em um próximo projeto para evitar algum desses problemas?)</div>
+                        <textarea name="q4" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+                </div>
+
+                <div class="section">
+                    <div class="section-title">Parte 2: Limitações do Projeto e Trabalhos Futuros</div>
+                    <p class="section-description">Esta parte nos ajudará a escrever sobre o que o sistema não faz e o que poderia ser feito no futuro.</p>
+
+                    <div class="question">
+                        <div class="question-number">5. Funcionalidade Faltante</div>
+                        <div class="question-text">Na sua opinião, qual é a principal funcionalidade que o nosso sistema não tem, mas que seria muito útil para o IBDN? (O que ficou de fora do nosso escopo?)</div>
+                        <textarea name="q5" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">6. Próxima Prioridade</div>
+                        <div class="question-text">Se tivéssemos mais um mês para trabalhar neste projeto, qual seria a SUA prioridade número 1 para adicionar ou melhorar? Por quê? (Ex: testes automatizados, o módulo de notificações, um painel administrativo no front-end?)</div>
+                        <textarea name="q6" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">7. "Dívida Técnica"</div>
+                        <div class="question-text">Existe alguma parte do nosso código que funciona, mas que você sabe que poderia ser melhorada (mais limpa, mais eficiente, mais segura) em uma versão futura?</div>
+                        <textarea name="q7" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+
+                    <div class="question">
+                        <div class="question-number">8. Considerações Finais</div>
+                        <div class="question-text">Algum outro desafio, dificuldade, limitação ou sugestão de melhoria que não foi coberto pelas perguntas acima?</div>
+                        <textarea name="q8" required placeholder="Digite sua resposta aqui..."></textarea>
+                    </div>
+                </div>
+
+                <div class="submit-section">
+                    <button type="button" class="submit-btn" onclick="exportarRespostas()">Compilar e Baixar Respostas</button>
+                </div>
+
+                <div class="encerramento-section">
+                    <p>Obrigado pela sua colaboração! Suas respostas serão fundamentais para criar uma documentação final de alta qualidade.</p>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
